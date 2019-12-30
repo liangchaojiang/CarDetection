@@ -58,10 +58,10 @@ public class LoginActivity extends AppCompatActivity {
                     alert.show();
 
                 }else{
-                    if (editText1.getText().toString().equals("123456") && editText2.getText().toString().equals("admin")){
-                        //Intent i = new Intent(LoginActivity.this, LoginActivityView.class);
+                    if (editText1.getText().toString().equals("12") && editText2.getText().toString().equals("12")){
+                        Intent i = new Intent(LoginActivity.this, ControlPan.class);
                         //启动
-                        //startActivity(i);
+                        startActivity(i);
                     }else{
                         AlertDialog alert2=new AlertDialog.Builder(LoginActivity.this).create();
                         alert2.setTitle("系统提示");
