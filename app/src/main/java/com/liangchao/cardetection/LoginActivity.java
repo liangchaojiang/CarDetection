@@ -47,6 +47,7 @@ public class LoginActivity extends AppCompatActivity {
         editText1 =(EditText) findViewById(R.id.editText1);
 
         Button button=(Button)findViewById(R.id.button);
+        Button button1 = (Button)findViewById(R.id.button2);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -72,6 +73,15 @@ public class LoginActivity extends AppCompatActivity {
 
             }
         });
+
+
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
 
     }
 
